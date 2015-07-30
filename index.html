@@ -1,0 +1,275 @@
+<html>
+<head>
+	<title>Propogate It!</title>
+	<style>
+		
+		#clientView{
+			display: none;
+			position:fixed;
+    		top:100px;
+		}
+		#serverView{
+			display: none;
+			position:fixed;
+    		top:100px;
+    		text-align: center;
+    		align : center;
+    		float: center;
+		}
+		#footerContent {
+    		position:fixed;
+    		bottom:20px;
+    		height:100px;
+    		width:100%;
+    		background-color:#0D22A6;
+    		color:white;
+    		border-left: 10px;
+    		border-right: 10px;
+    		text-align: center;
+  		}
+  		#headerContent{
+  			text-align: center;
+  			position:fixed;
+    		top:0px;
+    		height:100px;
+    		width:100%;
+    		background-color:#0D22A6;
+    		color:white;
+    		font-family: SimHei;
+  		}
+  		#footerText1{
+  			width: 33%; 
+  			float: left; 
+  			display: block;
+  		}
+		#footerText2 { 
+			width: 33%; 
+			float: right; 
+			display: block;
+		}
+		#footerText3 { 
+			width: 33%; 
+			float: right; 
+			display: block;
+		}
+  		#userView{
+  			position:fixed;
+    		top:100px;
+  		}
+  		#button{
+  			background-color:#0D22A6;
+  			font-color: white;
+  		}
+  		#column{
+  			width:300px;
+     		float:left;
+  		}
+		
+	</style>
+</head>
+<body >
+
+	
+
+	<div id = "headerContent">
+		<p><h2>Propagate It!</h2></p>
+		<p>Push important notifications instantly</p>
+
+	</div>
+	
+	<div id="userView" >
+		<p>Enter "Client" or "Server": </p>
+		<p id="invalidEntry"></p>
+		<form id="setNick">
+			<input size="35" id="choice"></input>
+			<br/>
+			<input style = " height: 30px; width: 100px; background-color:#0D22A6;
+  			color: white;"type="submit"></input>
+		</form>
+	
+
+	</div>
+	
+	<div id = "serverView">
+		<div id = "servHeader" align = "center"><h2>Server</h2></div>
+		<hr>
+		
+		<div id = "serverContent">
+			<table align = "center" cellspacing="30">
+				<tr>
+					<th>
+						<h3>Predefined Pushes</h3>
+					</th>
+					<th>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					</th>
+					<th>
+						<h3>Custom Pushes</h3>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<form id = "servDoor">
+							<button style = "  height: 30px; width: 100px; background-color:#0D22A6;
+  							color: white;">Door</button>
+						</form>
+					</th>
+					<th>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					</th>
+					<th>
+						<form id = "servCustom">
+							<input size="20" id="custom"></input><br/>
+							<input style = " height: 30px; width: 100px; background-color:#0D22A6;
+  							color: white;" type = "submit"></input>
+						</form>
+					</th>
+				</tr>
+
+				<tr>
+					<th>
+						<form id = "servAlarm">
+							<button style = "  height: 30px; width: 100px; background-color:#0D22A6;
+  							color: white;">Alarm</button>
+						</form>
+					</th>
+					<th>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					</th>
+					<th></th>
+				</tr>
+				
+				<tr>
+					<th>
+						<form id = "servFire">
+							<button style = "  height: 30px; width: 100px; background-color:#0D22A6;
+  							color: white;">Fire</button>
+						</form>
+					</th>
+					<th>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+					</th>
+					<th></th>
+				</tr>
+
+			</table>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id = "clientView">
+		<h2>Client</h2>
+		<div id = "clientContent">
+			
+		</div>
+	</div>
+
+	<div id = "footerContent">
+
+  		<div id = "footerText1">
+  			Designed by : Divesh Soni<br/>
+  		</div>
+
+  		<div id = "footerText2">
+  			About Divesh:<br/>
+  			<a href="https://www.linkedin.com/pub/divesh-soni/ab/6ba/132" target="_top" style="color : white;">LinkedIn Profile</a><br/>
+  			<a href="https://www.dropbox.com/sh/kdpvot5obca1z6v/AAA6pQahYwcCszmUNsVP1Slca?dl=0" target="_top" style="color : white;">Few Other Projects</a>
+  		</div>
+
+  		<div id ="footerText3">
+  			Contact:<br/>
+  			<a href="mailto:dms6244@rit.edu?Subject=Project%20Feedback" target="_top" style="color : white;">Email: dms6244@rit.edu</a><br/>
+  			Phone: 585-485-8011
+  		</div>	
+	</div>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		jQuery(function($){
+			var socket = io.connect();
+			var $newuserForm = $('#setNick');
+			var $invalidEntry = $('#invalidEntry');
+			var $choice = $('#choice');
+
+			var $notifications = $('#clientContent');
+			var $customNotify = $('#servCustom');
+			var $customMsg = $('#custom');
+			var $doorForm = $('#servDoor');
+			var $alarmForm = $('#servAlarm');
+			var $fireForm = $('#servFire');
+
+			$newuserForm.submit(function(e){
+				e.preventDefault();
+				socket.emit('new user', $choice.val(), function(data){
+					if(data == "Client"){
+						$('#userView').hide();
+						$('#serverView').hide();
+						$('#clientView').show();
+					}
+					else if (data == "Server"){
+						$('#userView').hide();
+						$('#serverView').show();
+						$('#clientView').hide();
+					}
+					else{
+						$invalidEntry.html('Invalid Entry! Please Try again.');
+					}
+				});
+				$choice.val('');
+			});
+
+			$doorForm.submit(function(e){
+				e.preventDefault();
+				socket.emit('door');
+			});
+
+			$alarmForm.submit(function(e){
+				e.preventDefault();
+				socket.emit('alarm');
+			});
+
+			$fireForm.submit(function(e){
+				e.preventDefault();
+				socket.emit('fire');
+			});
+
+			$customNotify.submit(function(e){
+				e.preventDefault();
+				socket.emit('Custom Notification', $customMsg.val());
+				$customMsg.val('');
+			});
+
+
+			socket.on('event notify', function(data){
+				$notifications.append("<br/><B>"+ data.msg +"</B><br/>");
+
+			});
+			
+			socket.on('notify', function(data){
+				$notifications.append("<br/><b><i>" + data.msg + "</i></b><br/>");
+				
+			});
+		});
+	</script>
+
+	
+</body>
+</html>
